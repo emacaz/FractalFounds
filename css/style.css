@@ -127,7 +127,7 @@ body {
   list-style: none;
 }
 .post a {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 
@@ -152,8 +152,13 @@ body {
 
 
 .header {
+  /* width: 100vh; */
   height: 150px;
   margin: 30px 0;
+}
+
+#hero {
+  width: 100vh;
 }
 
 .hero-container {

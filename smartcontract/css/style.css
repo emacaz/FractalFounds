@@ -35,16 +35,21 @@ body {
 .title h1, h2 {
   font-size: 1.2em;
 }
-.title h2 {
-  z-index: 2;
-}
-
-.gif {
+.header h2 {
+  font-size: 1em;
   z-index: 1;
 }
 
 
 
-@media screen and (max-width: 320px) {
 
+@media screen and (max-width: 600px) {
+  .title a {
+    text-decoration: none;
+    color: white;
+    background-color: tomato;
+    border-radius: 8px;
+    padding: 2px 20px;
+    font-size: 1em;
+  }
 }
