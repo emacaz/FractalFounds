@@ -142,7 +142,12 @@ body {
   padding-top: 2em;
 }
 
-
+@media screen and (max-width: 730px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 
 @media screen and (max-width: 600px) {
