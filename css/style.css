@@ -94,9 +94,16 @@ body {
 
 .invest:hover {
   text-decoration: underline;
-  background: rgba(210, 224, 13, 0.781);
+  background: rgb(255, 255, 255);
   cursor: pointer;
 
+}
+.invest {
+  display: flex;
+  width: 120px;
+}
+.invest img {
+  width: 80px;
 }
 
 
