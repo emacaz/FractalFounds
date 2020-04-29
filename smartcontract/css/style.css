@@ -35,6 +35,10 @@ body {
   color: white;
 }
 
+.content img {
+  width: 300px;
+}
+
 .title a:hover {
   background-color: rgba(255, 99, 71, 0.486);
 }
