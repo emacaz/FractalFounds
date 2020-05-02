@@ -1,6 +1,258 @@
 * {
   margin: 0;
 }
+body {
+  background: #e5e5e7;
+  font-family: 'Baloo Bhaina 2', cursive;
+}
+
+
+
+
+/* Main Container - BODY--------------------------------*/
+.container {
+  display: grid;
+  grid-template: 100px auto 60px / 50% 50%;
+  height: 100vh;
+  grid-template-areas: 'header header'
+                        'clauses newMember'
+                        'footer footer';
+  /* grid-gap: 10px; */
+
+}
+
+
+
+
+/* Content of the header -----------------------------*/
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template: auto / 100px auto 100px;
+  grid-template-areas: 'logo title backButton';
+  grid-gap: 20px;
+  align-items: center;
+  max-width: 1400px;
+}
+
+.logo img {
+  width: 100px;
+}
+.title {
+  display: grid;
+}
+.title p {
+  font-size: 2.1em;
+  align-self: center;
+}
+.button {
+  background-color: #37688f;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2em;
+  border-bottom: 5px solid #284c69;
+  cursor: pointer;
+  outline: none;
+}
+.button:hover {
+  background: white;
+  color: #37688f;
+  border-bottom: 5px solid white;
+  text-decoration: underline;
+}
+
+
+
+
+/* Content of Clausules - left content ---------------*/
+.clauses {
+  grid-area: clauses;
+  display: grid;
+  align-content: space-evenly;
+  padding: 0 30px;
+  max-width: 700px;
+
+}
+.clausulas p {
+  font-size: 1.2em;
+  margin: 10px 5px;
+}
+.description {
+  display: grid;
+  justify-content: space-around;
+  text-align: left;
+}
+.description a {
+  background: #ffffff80;
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  border-radius: 5px;
+  display: flex;
+  justify-items: center;
+  padding: 5px 25px;
+}
+.description a:hover {
+  text-decoration: underline;
+}
+.description img {
+  width: 40px;
+}
+
+.acceptation {
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* Content for new member registration - right content -*/
+.newMember {
+  grid-area: newMember;
+  display: grid;
+  grid-template: 50px auto 120px / auto;
+  grid-template-areas:  'title'
+                        'form'
+                        'gif';
+  /* align-content: space-evenly; */
+  padding: 0 15px;
+  max-width: 700px;
+
+}
+.member {
+  grid-area: title;
+}
+
+.form {
+  grid-area: form;
+  background: rgb(255, 255, 255, .9);
+  padding: 1.5em;
+  border-radius: 10px;
+  display: grid;
+}
+.form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #dbdbe2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  outline: none;
+}
+.form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #dbdbe2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  outline: none;
+}
+.form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #dbdbe2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.form button:hover {
+  background: #37688f;
+  color: white;
+}
+
+.gif {
+  grid-area: gif;
+  display: grid;
+  justify-items: right;
+  padding-top: 15px;
+}
+.gif img {
+  width: 160px;
+  text-align: right;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  
+}
+
+
+
+
+/* Content of the footer -------------------------------*/
+.footer {
+  grid-area: footer;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: #37688f;
+  /* max-width: 1400px; */
+}
+.footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+}
+
+/* ---------------------------------------------------------- */
+/* ----------------SIZE SCREEN SECTION HERE ------------------*/
+/* ---------------------------------------------------------- */
+
+@media screen and (max-with: 1400px) {
+  .container {
+    width: 1400px;
+  }
+}
+
+
+@media screen and (max-with: 950px) {
+  .acceptation {
+    display: block;
+  }
+}
+
+
+@media screen and (min-with: 710px) {
+  .title p{
+    font-size: 1.5em;
+  }
+}
+
+
+@media screen and (max-with: 320px) {
+  .container {
+    display: grid;
+    grid-template-areas: auto / auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------OLD-------------------- */
+
+/* 
+
+* {
+  margin: 0;
+}
 
 body {
   background: rgb(179, 177, 177);
@@ -18,7 +270,6 @@ body {
 }
 
 .title {
-  /* display: flex; */
   justify-items: space-between;
   margin: 8px auto;
 }
@@ -62,4 +313,4 @@ body {
     padding: 2px 20px;
     font-size: 1em;
   }
-}
+} */
