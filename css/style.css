@@ -144,9 +144,17 @@ body {
 
 /* ------------------------------------------------------------ */
 .footer {
-  height: 60px;
-  text-align: center;
-  padding-top: 2em;
+  height: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: #37688f;
+}
+.footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
 }
 
 @media screen and (max-width: 730px) {

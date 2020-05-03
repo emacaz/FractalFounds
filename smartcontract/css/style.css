@@ -28,7 +28,7 @@ body {
 .header {
   grid-area: header;
   display: grid;
-  grid-template: auto / 100px auto 100px;
+  grid-template: auto / 100px auto 400px;
   grid-template-areas: 'logo title backButton';
   grid-gap: 20px;
   align-items: center;
@@ -45,18 +45,24 @@ body {
   font-size: 2.1em;
   align-self: center;
 }
-.button {
+
+.backButton {
+  display: flex;
+  justify-content: space-around;
+}
+.backButton a {
   background-color: #37688f;
   color: white;
-  padding: 8px 12px;
+  padding: 0 15px;
   border-radius: 5px;
   border: none;
   font-size: 1.2em;
   border-bottom: 5px solid #284c69;
   cursor: pointer;
   outline: none;
+  text-decoration: none;
 }
-.button:hover {
+.backButton a:hover {
   background: white;
   color: #37688f;
   border-bottom: 5px solid white;
@@ -116,7 +122,6 @@ body {
   grid-template-areas:  'title'
                         'form'
                         'gif';
-  /* align-content: space-evenly; */
   padding: 0 15px;
   max-width: 700px;
 
@@ -192,7 +197,6 @@ body {
   justify-content: center;
   align-items: center;
   background: #37688f;
-  /* max-width: 1400px; */
 }
 .footer a {
   text-decoration: none;
