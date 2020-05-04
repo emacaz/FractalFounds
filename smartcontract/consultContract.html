@@ -6,6 +6,9 @@
   <title>Ver Contratos Actuales</title>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/consultContract.css">
+
+  <!-- This exposes the library as a global variable: ethers -->
+  <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript"></script>
 </head>
 <body>
 
@@ -16,13 +19,26 @@
     <!-- Section of the form -->
     <section class="formSection">
 
-      <a href="./index.html">Volver</a>
+      <a href="./index.html">⬅ Volver</a>
 
-      <form action="" class="form">
-        <p>&#91;Verificar Contrato&#93;</p>
-        <input type="text" placeholder="Dirección del Smart Contract">
+      <!-- Form to consult Data -->
+      <form action="" class="form" id="consultForm">
+        <p>&#91;Verificar Contrato&#93; ID</p>
+        <input type="text" placeholder="Dirección del Contrato Inteligente 📜">
       
-        <button type="submit">Consultar</button>
+        <button type="submit">🆔 Consultar</button>
+        
+      </form>
+
+
+      <!-- Form to make payments until 2023 -->
+      <form action="" class="form" id="payForm">
+        <p>&#91;Realizar Pago&#93; &#36;&#36;&#36;</p>
+        <input type="text" placeholder="Dirección del Contrato Inteligente 📜">
+
+        <input type="text" placeholder="Dirección de Billetera (ETH)">
+      
+        <button type="submit">💰 Pagar</button>
         
       </form>
     

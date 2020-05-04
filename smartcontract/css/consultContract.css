@@ -35,7 +35,7 @@ body {
 }
 
 .form {
-  margin-top: 15px;
+  margin: 15px 0 0 15px;
   width: 400px;
   height: 550px;
   background: rgb(255, 255, 255, .9);
