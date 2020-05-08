@@ -54,7 +54,7 @@
       </div>
 
       <div class="acceptation">
-        <input type="checkbox" name="checkbox" value="check" id="agree" />
+        <input type="checkbox" id="agree" />
         <p>He leído Las Cl&aacute;usulas del contrato y estoy de acuerdo</p>
       </div>
       
@@ -70,8 +70,8 @@
 
       <form action="" class="form">
           <p>Ingresa tus datos:</p>
-          <input type="text" placeholder="Dirección de Billetera (ETH)">
-          <select name="amount" id="">
+          <input type="text" id="wallet" placeholder="Dirección de Billetera (ETH)" minlength="42" maxlength="42">
+          <select name="amount" id="amountOptions">
             <option value="">- Seleccionar Inversi&oacute;n -</option>
             <option value="">&#36; 500 USD</option>
             <option value="">&#36; 1000 USD</option>
@@ -88,12 +88,9 @@
 
           <p>Duraci&oacute;n: hasta Diciembre 31 &#124; 2023</p>
 
-          <!-- <select name="times" id="">
-            <option value="">- Seleccionar Duraci&oacute;n -</option>
-            <option value="">Hasta el 01 de Enero del 2023</option>
-          </select> -->
-          <button type="submit">Invertir ahora</button>
-      </form>
+          <button type="button" id="investButton">Invertir ahora</button>
+        </form>
+        
 
         <div class="gif">
           <img src="./images/ether_rotation.gif" alt="Fractal Founds Logo.">
@@ -109,35 +106,7 @@
 
   </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- --------------OLD-------------- -->
-<!-- 
-  <header class="header">
-    <div class="title">
-      <a href="../index.html">Ir atr&aacute;s</a>
-      <h1>Estamos trabajando para Ustedes...</h1>
-    </div>
-    <h2>SmartContract En Desarrollo [9%]</h2>
-  </header>
-
-  <section class="content">
-    <a href="../index.html" class="contract" id="investButton">
-      <img src="./images/fractalFounds.gif" alt="SmartPaper from Fractal Founds">
-      <p>Fractal Founds S.P.A.</p>
-    </a>
-  </section>
-
+  <script src="../js/smartContract.js"></script>
 </body>
 
-</html> -->
+</html>
