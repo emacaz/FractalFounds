@@ -29,8 +29,15 @@ investButton.onclick = () => {
         if(amountOptions.options[i].selected) {
 
           amount = amounts[i]
-          alert(`Cantidad invertida: ${amount} Dólares. Ahora conecta tu Metamask`)
+          alert(`Cantidad invertida: ${amount} Dólares. Ahora conecta tu Metamask. Continue here`)
           break
+
+          // Conection with web3.js starts here*********************
+          var WEB3 = require('web3')
+
+          var web3 = new web3(Web3.givenProvider || 'ws:some.local-or-remote.node:8546')
+
+
         }
       }
       
