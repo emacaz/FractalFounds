@@ -29,16 +29,9 @@ investButton.onclick = () => {
         if(amountOptions.options[i].selected) {
 
           amount = amounts[i]
-          alert(`Cantidad invertida: ${amount} Dólares. Ahora conecta tu Metamask. Continue here`)
           break
-
-          // Conection with web3.js starts here*********************
-          var WEB3 = require('web3')
-
-          var web3 = new web3(Web3.givenProvider || 'ws:some.local-or-remote.node:8546')
-
-
         }
+        window.open('https://etherscan.io/address/0xc9652efc267982b82df4ffd4bba5e0e7392f51f5#code')
       }
       
       console.log(amount)
