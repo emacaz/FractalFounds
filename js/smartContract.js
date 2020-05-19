@@ -13,18 +13,18 @@ const amountOptions = document.querySelector('#amountOptions')
 
 btnInvest.onclick = () => {
  if(agree.checked) {
-   window.open('https://etherscan.io/address/0xc9652efc267982b82df4ffd4bba5e0e7392f51f5#writeContract')
+   window.open('https://etherscan.io/address/0x1c4e1e9f4750838122ae52ef0ac4295b55925917#writeContract')
  } else {
   alert('Por favor selecciona la casilla e indica que has descargado y leído Las Cláusulas del Contrato')
  }
 }
 
 btnVer.onclick = () => {
-  window.open('https://etherscan.io/address/0xc9652efc267982b82df4ffd4bba5e0e7392f51f5#readContract')
+  window.open('https://etherscan.io/address/0x1c4e1e9f4750838122ae52ef0ac4295b55925917#readContract')
 }
 
 btnCode.onclick = () => {
-  window.open('https://etherscan.io/address/0xc9652efc267982b82df4ffd4bba5e0e7392f51f5#code')
+  window.open('https://etherscan.io/address/0x1c4e1e9f4750838122ae52ef0ac4295b55925917#code')
 }
 
 
